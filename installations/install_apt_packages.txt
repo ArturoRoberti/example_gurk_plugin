@@ -18,3 +18,5 @@ software-properties-common
 build-essential
 gdb
 gedit
+nvtop
+htop
