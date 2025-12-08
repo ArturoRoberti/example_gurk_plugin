@@ -1,0 +1,40 @@
+repos:
+# Core pre-commit hooks (general purpose)
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v6.0.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: check-json
+  - id: check-merge-conflict
+  - id: detect-private-key
+# YAML checking with ruamel.yaml (supports custom !join tag)
+- repo: local
+  hooks:
+  - id: check-yaml
+    name: Check YAML with ruamel support
+    entry: python3 .github/scripts/check_yaml.py
+    language: python
+    additional_dependencies: [ruamel.yaml]
+    files: ^(configurations|installations)/.*\.ya?ml$
+# Auto-format YAML and JSON(C) files (local hooks)
+- repo: local
+  hooks:
+  - id: format-yaml
+    name: Auto-format YAML files
+    entry: python3 .github/scripts/format_yaml.py
+    language: python
+    additional_dependencies: [ruamel.yaml]
+    files: ^(configurations|installations)/.*\.ya?ml$
+  - id: format-json
+    name: Check & Auto-format JSON(C) files
+    entry: python3 .github/scripts/format_jsonc.py
+    language: python
+    additional_dependencies: [commentjson]
+    files: ^(configurations|installations)/.*\.jsonc?$
+# Security scan for secrets
+- repo: https://github.com/gitleaks/gitleaks
+  rev: v8.18.2
+  hooks:
+  - id: gitleaks
+    args: ["--no-banner", "protect", "--staged"]

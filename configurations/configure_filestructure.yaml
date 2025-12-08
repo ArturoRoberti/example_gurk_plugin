@@ -12,8 +12,10 @@
 # Recommended: Add custom executable scripts and aliases in $HOME/.cmds, then add it to PATH
 HOME:
   .cmds:
-    aliases.bash: git@github.com:ArturoRoberti/cstp_config.git?depth=1&path=templates/aliases.bash
-    argparse.bash: https://github.com/nhoffman/argparse-bash.git?depth=1&path=argparse.bash
+    aliases.bash:
+      git@github.com:ArturoRoberti/cstp_config.git?depth=1&path=templates/aliases.bash
+    argparse.bash:
+      https://github.com/nhoffman/argparse-bash.git?depth=1&path=argparse.bash
   git: null
   Documents:
     Personal:
