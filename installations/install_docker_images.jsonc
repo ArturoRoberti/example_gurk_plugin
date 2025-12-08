@@ -3,11 +3,6 @@
 [
   {
     "registry": "docker.io",
-    "image": "ubuntu",
-    "tag": "latest"
-  },
-  {
-    "registry": "docker.io",
     "image": "nvidia/cuda",
     "tag": "13.0.0-devel-ubuntu24.04"
   },

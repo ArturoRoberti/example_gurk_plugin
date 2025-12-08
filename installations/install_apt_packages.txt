@@ -1,4 +1,5 @@
 # See all available apt packages at https://packages.ubuntu.com/
+git-lfs
 curl
 wget
 xclip
@@ -20,3 +21,4 @@ gdb
 gedit
 nvtop
 htop
+rsync

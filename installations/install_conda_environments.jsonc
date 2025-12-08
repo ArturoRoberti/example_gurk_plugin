@@ -1,20 +1,7 @@
 // NOTE: Unless explicitly specified, the channel "conda-forge" should also be used for most packages
 // For anyone using ROS, we can recommend RoboStack (https://robostack.github.io/GettingStarted.html),
-//   which provides easy-to-use conda packages for ROS distros. See below for examples.
+//   which provides easy-to-use conda packages for ROS distros. See below for an example.
 {
-  "ros_noetic": {
-    "type": "mamba",
-    "channels": [
-      "conda-forge",
-      "robostack-noetic"
-    ],
-    "conda_packages": [
-      "ros-noetic-desktop"
-    ],
-    "pip_packages": [
-      "catkin-tools"
-    ]
-  },
   "ros_humble": {
     "type": "mamba",
     "channels": [
