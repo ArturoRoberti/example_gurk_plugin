@@ -5,8 +5,6 @@
 # gurk_example_plugin
 Example plugin for the [gurk package manager](https://github.com/ArturoRoberti/gurk). Used as
 ```bash
-sudo apt update && sudo apt install pipx git
-pipx install gurk && gurk init
 gurk run 'https://github.com/ArturoRoberti/gurk_example_plugin.git'
 ```
 

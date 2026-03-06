@@ -1,8 +1,8 @@
-HOME:
+~:
   .cmds:
-    argparse.bash:
-      https://github.com/nhoffman/argparse-bash.git?path=argparse.bash
+    argparse.bash: https://github.com/nhoffman/argparse-bash.git?path=argparse.bash
     aliases.bash: ../templates/aliases.bash
+    add_licenses.bash: ../templates/add_licenses.bash
   git: null
   Documents:
     Personal:
@@ -10,7 +10,3 @@ HOME:
       IDs: null
     General: null
     Work: null
-ROOT:
-  usr:
-    bin:
-      python: symlink:///usr/bin/python3

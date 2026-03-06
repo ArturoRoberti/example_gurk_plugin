@@ -30,7 +30,7 @@ options:
       config_file: config/install_vscode_extensions.txt
     nvidia/install-nvidia-driver:
       args: ["--nvidia-driver-version", "recommended"]
-  setdown:
+  teardown:
     fzf/uninstall-fzf: {}
     fzf/uninstall-loki-shell: {}
   default: *setup_option
