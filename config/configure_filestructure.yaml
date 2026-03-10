@@ -1,8 +1,8 @@
 ~:
   .cmds:
     argparse.bash: https://github.com/nhoffman/argparse-bash.git?path=argparse.bash
-    aliases.bash: ../templates/aliases.bash
-    add_licenses.bash: ../templates/add_licenses.bash
+    aliases.bash: https://github.com/ArturoRoberti/gurk_example_plugin/templates/aliases.bash
+    add_licenses.bash: https://github.com/ArturoRoberti/gurk_example_plugin/templates/add_licenses.bash
   git: null
   Documents:
     Personal:

@@ -1,4 +1,4 @@
 [project]
 name = "example-gurk-plugin"
-version = "1.0.2"
+version = "1.0.3"
 description = "An example Gurk plugin"
