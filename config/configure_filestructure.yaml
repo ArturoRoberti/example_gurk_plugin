@@ -2,7 +2,7 @@
   .cmds:
     argparse.bash: https://github.com/nhoffman/argparse-bash.git?path=argparse.bash
     aliases.bash: https://github.com/ArturoRoberti/gurk_example_plugin?path=templates/aliases.bash
-    add_licenses.bash: https://github.com/ArturoRoberti/gurk_example_plugin?path=templates/add_licenses.bash
+    add_license.bash: https://github.com/ArturoRoberti/gurk_example_plugin?path=templates/add_license.bash
   git: null
   Documents:
     Personal:
