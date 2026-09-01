@@ -5,6 +5,7 @@ imports:
   - fzf
   - nvidia
   - vscode
+  - agents
 
 options:
   setup: &setup_option
